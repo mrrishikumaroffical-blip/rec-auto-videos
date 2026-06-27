@@ -1,6 +1,15 @@
 import os
 import json
+import httpx
 from groq import Groq
+
+# Fix httpx proxies issue
+if not hasattr(httpx, "_orig_client"):
+    _orig_init = httpx.Client.__init__
+    def _patched_init(self, *args, **kwargs):
+        kwargs.pop("proxies", None)
+        _orig_init(self, *args, **kwargs)
+    httpx.Client.__init__ = _patched_init
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
@@ -24,23 +33,20 @@ Final Score: X/10
 Verdict: PASS or REJECT
 Reason: one sentence why
 """
-
     response = client.chat.completions.create(
         model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7
     )
-
-    result = response.choices[0].message.content
-    return result
+    return response.choices[0].message.content
 
 def parse_final_score(result):
     for line in result.split("\n"):
         if "Final Score:" in line:
             try:
-                raw = line.split(":")[1].strip().replace("/100","").replace("/10","").strip()
-                score = float(raw) if float(raw) <= 10 else float(raw)/10
-                return score
+                raw = line.split(":")[1].strip().replace("/10","").replace("/100","").strip()
+                score = float(raw)
+                return score if score <= 10 else score/10
             except:
                 return 0.0
     return 0.0
@@ -75,5 +81,4 @@ def run_viral_scorer(ranked_articles):
         return best_article, best_score
     else:
         print("❌ REJECTED! No topic scored >= 7")
-        print("   Pipeline stopped.")
         return None, 0
