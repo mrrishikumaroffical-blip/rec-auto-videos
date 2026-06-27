@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+client_secrets.json
+client_secrets_web.json
+token.json
