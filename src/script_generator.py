@@ -1,7 +1,20 @@
 import os
-from groq import Groq
+import requests
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+def call_groq(prompt):
+    headers = {
+        "Authorization": f"Bearer {os.getenv('GROQ_API_KEY')}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": "llama-3.1-8b-instant",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.8
+    }
+    response = requests.post(GROQ_API_URL, headers=headers, json=payload, timeout=30)
+    return response.json()["choices"][0]["message"]["content"]
 
 def generate_script(article):
     prompt = f"""
@@ -25,12 +38,7 @@ BODY: ...
 CTA: ...
 WORD_COUNT: ...
 """
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.8
-    )
-    return response.choices[0].message.content
+    return call_groq(prompt)
 
 def review_script(script):
     prompt = f"""
@@ -49,12 +57,7 @@ BODY: ...
 CTA: ...
 WORD_COUNT: ...
 """
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
-    )
-    return response.choices[0].message.content
+    return call_groq(prompt)
 
 def generate_final_script(article):
     print("\n✍️  Starting Script Generator...")

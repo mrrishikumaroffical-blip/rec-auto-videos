@@ -1,17 +1,21 @@
 import os
 import json
-import httpx
-from groq import Groq
+import requests
 
-# Fix httpx proxies issue
-if not hasattr(httpx, "_orig_client"):
-    _orig_init = httpx.Client.__init__
-    def _patched_init(self, *args, **kwargs):
-        kwargs.pop("proxies", None)
-        _orig_init(self, *args, **kwargs)
-    httpx.Client.__init__ = _patched_init
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+def call_groq(prompt):
+    headers = {
+        "Authorization": f"Bearer {os.getenv('GROQ_API_KEY')}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": "llama-3.1-8b-instant",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.7
+    }
+    response = requests.post(GROQ_API_URL, headers=headers, json=payload, timeout=30)
+    return response.json()["choices"][0]["message"]["content"]
 
 def score_topic(article):
     prompt = f"""
@@ -33,12 +37,7 @@ Final Score: X/10
 Verdict: PASS or REJECT
 Reason: one sentence why
 """
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
-    )
-    return response.choices[0].message.content
+    return call_groq(prompt)
 
 def parse_final_score(result):
     for line in result.split("\n"):
