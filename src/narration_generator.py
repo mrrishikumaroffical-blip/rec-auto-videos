@@ -1,24 +1,13 @@
 import os
-import re
-import asyncio
-import edge_tts
+from gtts import gTTS
 
 def extract_script_text(script):
-    lines = script.split("\n")
-    text  = ""
-    for line in lines:
+    text = ""
+    for line in script.split("\n"):
         for tag in ["HOOK:", "BODY:", "CTA:"]:
             if line.startswith(tag):
                 text += line.replace(tag, "").strip() + " "
     return text.strip()
-
-async def generate_audio(text, output_path):
-    communicate = edge_tts.Communicate(
-        text=text,
-        voice="en-US-ChristopherNeural",
-        rate="+10%"
-    )
-    await communicate.save(output_path)
 
 def generate_narration(script):
     print("\n🎙️  Starting Narration Generator...")
@@ -32,7 +21,8 @@ def generate_narration(script):
     output_path = "data/videos/narration.mp3"
 
     print("  Generating voiceover...")
-    asyncio.run(generate_audio(text, output_path))
+    tts = gTTS(text=text, lang="en", slow=False)
+    tts.save(output_path)
 
     size = os.path.getsize(output_path)
     print(f"  ✅ Narration saved: {output_path}")
