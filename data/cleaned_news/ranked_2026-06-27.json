@@ -1,0 +1,153 @@
+[
+  {
+    "id": "9cfb958b364c4efaded47fdb0b9d1bc0",
+    "source": "TechCrunch",
+    "title": "Why everyone from OpenAI to SpaceX is building their own chips and turning up the heat on Nvidia",
+    "summary": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending.160160 OpenAI just shared its plans to spice things up with160Jalapeo, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out of singlesupplier risk. The goal160is160less160of160a 8230",
+    "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
+    "collected_at": "2026-06-27T04:34:37.793687+00:00",
+    "keywords": [
+      "ai",
+      "space",
+      "google",
+      "openai",
+      "apple",
+      "nvidia"
+    ],
+    "keyword_score": 6
+  },
+  {
+    "id": "411c447d206dc3f08c8a440e2f46eba5",
+    "source": "TechCrunch",
+    "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+    "summary": "OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of with the broader public. The reason the Trump administration told it to.",
+    "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+    "collected_at": "2026-06-27T04:34:37.793803+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt",
+      "new",
+      "release"
+    ],
+    "keyword_score": 5
+  },
+  {
+    "id": "203eca601d59588f8ce0da182291f457",
+    "source": "VentureBeat",
+    "title": "OpenAIs updated GPT5.5 Instant is better at shopping, complex constraints, and understanding user intent and its already in the API",
+    "summary": "OpenAI has made a significant update to its most widely used language model, GPT5.5 Instant, which is the default in the free version of ChatGPT. The company announced the upgraded version of GPT5.5 Instant yesterday on X, calling it quotmuch more fun to talk toquot and saying it is quotbetter at understanding the intent behind a question",
+    "url": "https://venturebeat.com/technology/openais-updated-gpt-5-5-instant-is-better-at-shopping-complex-constraints-and-understanding-user-intent-and-its-already-in-the-api",
+    "collected_at": "2026-06-27T04:34:38.995795+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt",
+      "chatgpt",
+      "release"
+    ],
+    "keyword_score": 5
+  },
+  {
+    "id": "eea52bbd31dc03d51eef1f21aaaf552a",
+    "source": "TechCrunch",
+    "title": "Corgi, the buzzy Y Combinatorbacked insurance tech startup, says it didnt steal an open source product",
+    "summary": "Corgi became embroiled in controversy when Papermark accused it of stealing its software. Corgi says it did not, raising new questions about vibe coding.",
+    "url": "https://techcrunch.com/2026/06/26/corgi-the-buzzy-y-combinator-backed-insurance-tech-startup-says-it-didnt-steal-an-open-source-product/",
+    "collected_at": "2026-06-27T04:34:37.793615+00:00",
+    "keywords": [
+      "ai",
+      "startup",
+      "software",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "bdfe519981c21c0794c74b5a0bd8d3bb",
+    "source": "TechCrunch",
+    "title": "Robotaxis drive miles just to get cleaned and charged this new startup wants to fix that",
+    "summary": "Aseon Labs, which came out of Y Combinators 2026 spring cohort, has raised 10 million from Crane Venture Partners and others.",
+    "url": "https://techcrunch.com/2026/06/26/this-silicon-valley-startup-has-raised-10m-to-build-pitstops-to-clean-and-charge-robotaxis/",
+    "collected_at": "2026-06-27T04:34:37.793781+00:00",
+    "keywords": [
+      "ai",
+      "startup",
+      "robot",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "a20dc5f55ff4cdf0609914ba129a1047",
+    "source": "VentureBeat",
+    "title": "OpenAI unveils GPT5.6 Sol, Terra and Luna models but only accessible to limited preview partners for now, per US Gov",
+    "summary": "OpenAI is announcing a limited preview of its newest frontier AI model GPT5.6 family, which comes in three variants Sol, Terra, and Luna. Sol is for the hardest problems, such as complex coding and security research Terra is for highvolume business tasks like customer support, internal tools and document analysis and Luna is for faster, lowercost everyday work like summarization, drafting a",
+    "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov",
+    "collected_at": "2026-06-27T04:34:38.995502+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "653786dc4b317d7f66c3f736f892cf4a",
+    "source": "VentureBeat",
+    "title": "Liquid AIs smallest model yet LFM2.5230M beats models 4X its size at data extraction, can run anywhere",
+    "summary": "Liquid AI, founded by former MIT computer scientists, today released its smallest AI language model yet, LFM2.5230M, and enterprises would do well to consider it for their uses in data extraction and local deployment on smartphones, laptops and robotics.This is a 230millionparameter foundation model explicitly designed for ondevice agentic workflows, and as Liquid states in its release blog post, that small size makes it possible",
+    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "collected_at": "2026-06-27T04:34:38.995684+00:00",
+    "keywords": [
+      "ai",
+      "robotics",
+      "robot",
+      "release"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "a20579b150762f4217f19c34dbc69911",
+    "source": "TechCrunch",
+    "title": "OpenAI limits GPT5.6 rollout after government request, says restrictions shouldnt be the norm",
+    "summary": "We dont believe this kind of government access process should become the longterm default, says OpenAI. It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them.",
+    "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+    "collected_at": "2026-06-27T04:34:37.793660+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt"
+    ],
+    "keyword_score": 3
+  },
+  {
+    "id": "8b6e0b604b74c499c46b3adc3999d383",
+    "source": "TheVerge",
+    "title": "Prime Day is almost over, but these are still the best Apple deals I8217ve seen",
+    "summary": "Amazon8217s Prime Day is now in its final hours, but whether you8217re looking for a new pair of wireless earbuds or a smartwatch, theres a good chance youll still find a discount. The Apple Watch Series 11 remains at its best price to date, while the AirPods Pro 3 are still on sale for 179. 8230",
+    "url": "https://www.theverge.com/gadgets/949350/amazon-prime-day-sale-best-apple-deals-2026",
+    "collected_at": "2026-06-27T04:34:38.196967+00:00",
+    "keywords": [
+      "ai",
+      "apple",
+      "new"
+    ],
+    "keyword_score": 3
+  },
+  {
+    "id": "55360dca08d1131499dbe6fe57af39d7",
+    "source": "ArsTechnica",
+    "title": "NYT slams Microsoft for building copyrightinfringing supercomputer for OpenAI",
+    "summary": "NYT shifts OpenAIMicrosoft copyright claims after SCOTUS ruling against Sony.",
+    "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
+    "collected_at": "2026-06-27T04:34:38.693036+00:00",
+    "keywords": [
+      "ai",
+      "microsoft",
+      "openai"
+    ],
+    "keyword_score": 3
+  }
+]
