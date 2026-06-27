@@ -15,17 +15,18 @@ def call_groq(prompt):
         "temperature": 0.7
     }
     response = requests.post(GROQ_API_URL, headers=headers, json=payload, timeout=30)
-    return response.json()["choices"][0]["message"]["content"]
+    data = response.json()
+    if "choices" not in data:
+        print(f"  ⚠️  Groq API error: {data}")
+        return ""
+    return data["choices"][0]["message"]["content"]
 
 def score_topic(article):
     prompt = f"""
 You are a viral content expert for YouTube Shorts.
-
 Analyze this tech news article and give scores out of 10:
-
 Title: {article["title"]}
 Summary: {article["summary"]}
-
 Give scores in this EXACT format:
 Topic Popularity: X/10
 Hook Strength: X/10
@@ -40,6 +41,8 @@ Reason: one sentence why
     return call_groq(prompt)
 
 def parse_final_score(result):
+    if not result:
+        return 0.0
     for line in result.split("\n"):
         if "Final Score:" in line:
             try:
@@ -75,8 +78,6 @@ def run_viral_scorer(ranked_articles):
         print(f"✅ PASS! Best topic selected:")
         print(f"   {best_article['title']}")
         print(f"   Score: {best_score}/10")
-        print("\nFull Analysis:")
-        print(best_result)
         return best_article, best_score
     else:
         print("❌ REJECTED! No topic scored >= 7")
