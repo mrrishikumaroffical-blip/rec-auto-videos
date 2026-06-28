@@ -12,7 +12,16 @@ from src.video_generator import create_video
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
-import json
+
+AFFILIATE_LINKS = """
+🔗 Tools I Recommend:
+💻 Best Hosting → https://hostinger.com
+🔒 Stay Safe Online → https://nordvpn.com
+📚 Learn AI Free → https://skillshare.com
+🤖 Best AI Tool → https://notion.so
+
+#AI #Tech #Shorts #Technology #ArtificialIntelligence #TechNews
+"""
 
 def upload_to_youtube(video_path, article):
     token_data = {
@@ -25,8 +34,8 @@ def upload_to_youtube(video_path, article):
     creds   = Credentials(token=None, **token_data)
     youtube = build("youtube", "v3", credentials=creds)
 
-    title       = article["title"][:80] + " #Shorts"
-    description = f"{article['title']}\n\n{article['summary']}\n\n#AI #Tech #Shorts"
+    title       = article["title"][:75] + " #Shorts"
+    description = f"{article['title']}\n\n{article['summary']}\n\n{AFFILIATE_LINKS}"
     media       = MediaFileUpload(video_path, chunksize=-1, resumable=True)
 
     response = youtube.videos().insert(
@@ -35,7 +44,7 @@ def upload_to_youtube(video_path, article):
             "snippet": {
                 "title":       title,
                 "description": description,
-                "tags":        ["AI", "Tech", "Shorts", "Technology", "News"],
+                "tags":        ["AI", "Tech", "Shorts", "Technology", "News", "ArtificialIntelligence"],
                 "categoryId":  "28"
             },
             "status": {

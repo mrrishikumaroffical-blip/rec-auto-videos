@@ -11,47 +11,52 @@ def call_groq(prompt):
     payload = {
         "model": "llama-3.1-8b-instant",
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.8
+        "temperature": 0.9
     }
     response = requests.post(GROQ_API_URL, headers=headers, json=payload, timeout=30)
     return response.json()["choices"][0]["message"]["content"]
 
 def generate_script(article):
     prompt = f"""
-You are a YouTube Shorts script writer.
+You are a viral YouTube Shorts script writer targeting 16-40 year olds in the USA.
 
-Write a 45-second viral script for this tech news:
+Write a script for this tech news:
 Title: {article["title"]}
 Summary: {article["summary"]}
 
-Rules:
-- Start with a shocking hook (1 sentence)
-- Explain the news simply (3-4 sentences)
-- End with a strong CTA (1 sentence)
-- Total: 130-150 words
-- Conversational tone
-- No hashtags, no emojis
+STRICT RULES:
+- Talk directly to viewer using YOU and YOUR
+- Start with ONE shocking question that triggers FEAR or CURIOSITY
+- Use SHORT simple sentences (max 10 words each)
+- Conversational tone like talking to a friend
+- Trigger emotions: FEAR, CURIOSITY, PRIDE
+- Total: 120-140 words
+- NO hashtags, NO emojis, NO complex words
 
-Format EXACTLY like this:
-HOOK: ...
-BODY: ...
-CTA: ...
-WORD_COUNT: ...
+EXACT FORMAT:
+HOOK: (1 shocking question - max 15 words)
+BODY: (3-4 short punchy sentences using YOU - max 80 words)
+CTA: (1 sentence making viewer feel special/smart - max 20 words)
+WORD_COUNT: (number)
 """
     return call_groq(prompt)
 
 def review_script(script):
     prompt = f"""
-You are a YouTube Shorts expert reviewer.
+You are a YouTube Shorts expert for US audience aged 16-40.
 
-Review this script and improve it:
+Review and improve this script:
 {script}
 
-Rules:
-- Keep it under 150 words
-- Make hook more attention grabbing
-- Keep simple language
-- Return ONLY the improved script in same format:
+STRICT RULES:
+- Hook MUST be a shocking question
+- Every sentence must use YOU or YOUR
+- Each sentence max 10 words
+- Must trigger FEAR or CURIOSITY in first 3 seconds
+- End with PRIDE emotion
+- Keep under 140 words
+- Return ONLY improved script in EXACT same format:
+
 HOOK: ...
 BODY: ...
 CTA: ...

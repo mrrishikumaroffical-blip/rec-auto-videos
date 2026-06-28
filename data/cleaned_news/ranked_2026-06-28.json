@@ -1,0 +1,153 @@
+[
+  {
+    "id": "9cfb958b364c4efaded47fdb0b9d1bc0",
+    "source": "TechCrunch",
+    "title": "Why everyone from OpenAI to SpaceX is building their own chips and turning up the heat on Nvidia",
+    "summary": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending.160160 OpenAI just shared its plans to spice things up with160Jalapeo, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out of singlesupplier risk. The goal160is160less160of160a 8230",
+    "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
+    "collected_at": "2026-06-28T02:13:51.722439+00:00",
+    "keywords": [
+      "ai",
+      "space",
+      "google",
+      "openai",
+      "apple",
+      "nvidia"
+    ],
+    "keyword_score": 6
+  },
+  {
+    "id": "203eca601d59588f8ce0da182291f457",
+    "source": "VentureBeat",
+    "title": "OpenAIs updated GPT5.5 Instant is better at shopping, complex constraints, and understanding user intent and its already in the API",
+    "summary": "OpenAI has made a significant update to its most widely used language model, GPT5.5 Instant, which is the default in the free version of ChatGPT. The company announced the upgraded version of GPT5.5 Instant yesterday on X, calling it quotmuch more fun to talk toquot and saying it is quotbetter at understanding the intent behind a question",
+    "url": "https://venturebeat.com/technology/openais-updated-gpt-5-5-instant-is-better-at-shopping-complex-constraints-and-understanding-user-intent-and-its-already-in-the-api",
+    "collected_at": "2026-06-28T02:13:52.413321+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt",
+      "chatgpt",
+      "release"
+    ],
+    "keyword_score": 5
+  },
+  {
+    "id": "0242d60a4262827b500c14a267f627f1",
+    "source": "NewsAPI",
+    "title": "New iPhone Ultra report has latest pricing and release timing updates 9to5Mac",
+    "summary": "Apples highly anticipated foldable iPhone is launching this fall, but a new report today claims you might have to wait...",
+    "url": "https://9to5mac.com/2026/06/26/new-iphone-ultra-report-has-latest-pricing-and-release-timing-updates/",
+    "collected_at": "2026-06-28T02:13:52.584852+00:00",
+    "keywords": [
+      "ai",
+      "apple",
+      "launch",
+      "new",
+      "release"
+    ],
+    "keyword_score": 5
+  },
+  {
+    "id": "1fd41539cb3b2ee78732d183a1aa89a2",
+    "source": "TechCrunch",
+    "title": "Asian AI startups launch Mythoslike models as Anthropics export ban drags on",
+    "summary": "New models are launching in Asia that promise Mythoslike capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+    "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+    "collected_at": "2026-06-28T02:13:51.722332+00:00",
+    "keywords": [
+      "ai",
+      "startup",
+      "launch",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "eea52bbd31dc03d51eef1f21aaaf552a",
+    "source": "TechCrunch",
+    "title": "Corgi, the buzzy Y Combinatorbacked insurance tech startup, says it didnt steal an open source product",
+    "summary": "Corgi became embroiled in controversy when Papermark accused it of stealing its software. Corgi says it did not, raising new questions about vibe coding.",
+    "url": "https://techcrunch.com/2026/06/26/corgi-the-buzzy-y-combinator-backed-insurance-tech-startup-says-it-didnt-steal-an-open-source-product/",
+    "collected_at": "2026-06-28T02:13:51.722390+00:00",
+    "keywords": [
+      "ai",
+      "startup",
+      "software",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "a20dc5f55ff4cdf0609914ba129a1047",
+    "source": "VentureBeat",
+    "title": "OpenAI unveils GPT5.6 Sol, Terra and Luna models but only accessible to limited preview partners for now, per US Gov",
+    "summary": "OpenAI is announcing a limited preview of its newest frontier AI model GPT5.6 family, which comes in three variants Sol, Terra, and Luna. Sol is for the hardest problems, such as complex coding and security research Terra is for highvolume business tasks like customer support, internal tools and document analysis and Luna is for faster, lowercost everyday work like summarization, drafting a",
+    "url": "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov",
+    "collected_at": "2026-06-28T02:13:52.413146+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt",
+      "new"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "653786dc4b317d7f66c3f736f892cf4a",
+    "source": "VentureBeat",
+    "title": "Liquid AIs smallest model yet LFM2.5230M beats models 4X its size at data extraction, can run anywhere",
+    "summary": "Liquid AI, founded by former MIT computer scientists, today released its smallest AI language model yet, LFM2.5230M, and enterprises would do well to consider it for their uses in data extraction and local deployment on smartphones, laptops and robotics.This is a 230millionparameter foundation model explicitly designed for ondevice agentic workflows, and as Liquid states in its release blog post, that small size makes it possible",
+    "url": "https://venturebeat.com/technology/liquid-ais-smallest-model-yet-lfm2-5-230m-beats-models-4x-its-size-at-data-extraction-can-run-anywhere",
+    "collected_at": "2026-06-28T02:13:52.413251+00:00",
+    "keywords": [
+      "ai",
+      "robotics",
+      "robot",
+      "release"
+    ],
+    "keyword_score": 4
+  },
+  {
+    "id": "e3bdbfb37e2d20bb3a9420fa5554a68a",
+    "source": "TechCrunch",
+    "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
+    "summary": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAIs hardware team.",
+    "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+    "collected_at": "2026-06-28T02:13:51.722235+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "apple"
+    ],
+    "keyword_score": 3
+  },
+  {
+    "id": "a20579b150762f4217f19c34dbc69911",
+    "source": "TechCrunch",
+    "title": "OpenAI limits GPT5.6 rollout after government request, says restrictions shouldnt be the norm",
+    "summary": "We dont believe this kind of government access process should become the longterm default, says OpenAI. It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them.",
+    "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+    "collected_at": "2026-06-28T02:13:51.722413+00:00",
+    "keywords": [
+      "ai",
+      "openai",
+      "gpt"
+    ],
+    "keyword_score": 3
+  },
+  {
+    "id": "09c192d7e90c482e792a0985242d4535",
+    "source": "TheVerge",
+    "title": "Inside the room where the smart home industry is still betting on Matter",
+    "summary": "Four years ago, overlooking a canal in Amsterdam, the smart home industry collectively launched Matter, the one interoperability standard to rule them all. Heralded as the solution to the industrys struggles, Matter was built on open standards and existing technologies and is the result of years of collaboration between traditional rivals, including Apple, Google, Amazon, 8230",
+    "url": "https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability",
+    "collected_at": "2026-06-28T02:13:51.838094+00:00",
+    "keywords": [
+      "google",
+      "apple",
+      "launch"
+    ],
+    "keyword_score": 3
+  }
+]
