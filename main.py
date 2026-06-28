@@ -1,5 +1,6 @@
 import os
 import sys
+import shutil
 sys.path.insert(0, os.getcwd())
 
 from src.news_collector import collect_news
@@ -18,10 +19,29 @@ AFFILIATE_LINKS = """
 💻 Best Hosting → https://hostinger.com
 🔒 Stay Safe Online → https://nordvpn.com
 📚 Learn AI Free → https://skillshare.com
-🤖 Best AI Tool → https://notion.so
 
 #AI #Tech #Shorts #Technology #ArtificialIntelligence #TechNews
 """
+
+def cleanup_videos():
+    """Delete all video files after upload to save storage."""
+    folders = [
+        "data/videos/clips",
+        "data/videos/frames",
+    ]
+    files = [
+        "data/videos/final_video.mp4",
+        "data/videos/narration.mp3"
+    ]
+    for folder in folders:
+        if os.path.exists(folder):
+            shutil.rmtree(folder)
+            print(f"  🗑️  Deleted: {folder}")
+    for f in files:
+        if os.path.exists(f):
+            os.remove(f)
+            print(f"  🗑️  Deleted: {f}")
+    print("  ✅ Storage cleaned!")
 
 def upload_to_youtube(video_path, article):
     token_data = {
@@ -44,7 +64,7 @@ def upload_to_youtube(video_path, article):
             "snippet": {
                 "title":       title,
                 "description": description,
-                "tags":        ["AI", "Tech", "Shorts", "Technology", "News", "ArtificialIntelligence"],
+                "tags":        ["AI", "Tech", "Shorts", "Technology", "News"],
                 "categoryId":  "28"
             },
             "status": {
@@ -87,8 +107,12 @@ def main():
     url = upload_to_youtube(video_path, best_article)
     print(f"✅ Video live: {url}")
 
+    print("\n[7/7] Cleaning up storage...")
+    cleanup_videos()
+
     print("\n" + "=" * 50)
     print("  ✅ PIPELINE COMPLETE!")
+    print(f"  🔗 {url}")
     print("=" * 50)
 
 if __name__ == "__main__":

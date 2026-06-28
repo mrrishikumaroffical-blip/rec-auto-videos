@@ -225,3 +225,10 @@ data/videos/clips/
 data/videos/frames/
 data/videos/*.mp4
 data/videos/*.mp3
+
+data/videos/clips/
+data/videos/frames/
+data/videos/*.mp4
+data/videos/*.mp3
+data/videos/*.jpg
+data/videos/*.png
