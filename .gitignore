@@ -220,3 +220,8 @@ __marimo__/
 client_secrets.json
 client_secrets_web.json
 token.json
+
+data/videos/clips/
+data/videos/frames/
+data/videos/*.mp4
+data/videos/*.mp3
