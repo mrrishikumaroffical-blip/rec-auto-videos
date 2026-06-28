@@ -2,9 +2,16 @@ name: Daily Video Generator
 
 on:
   schedule:
-    - cron: "45 13 * * *"  # 8:00 AM EST
-    - cron: "45 17 * * *"  # 12:00 PM EST
-    - cron: "45 1 * * *"   # 8:00 PM EST
+    - cron: "0 0 * * *"    # 12:00 AM EST
+    - cron: "0 3 * * *"    # 03:00 AM EST
+    - cron: "0 5 * * *"    # 05:00 AM EST
+    - cron: "0 8 * * *"    # 08:00 AM EST
+    - cron: "0 10 * * *"   # 10:00 AM EST
+    - cron: "0 12 * * *"   # 12:00 PM EST
+    - cron: "0 14 * * *"   # 02:00 PM EST
+    - cron: "0 17 * * *"   # 05:00 PM EST
+    - cron: "0 20 * * *"   # 08:00 PM EST
+    - cron: "0 22 * * *"   # 10:00 PM EST
   workflow_dispatch:
 
 jobs:
