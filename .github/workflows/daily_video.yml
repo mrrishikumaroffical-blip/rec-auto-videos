@@ -2,7 +2,9 @@ name: Daily Video Generator
 
 on:
   schedule:
-    - cron: "15 15 * * *"
+    - cron: "45 13 * * *"  # 8:00 AM EST
+    - cron: "45 17 * * *"  # 12:00 PM EST
+    - cron: "45 1 * * *"   # 8:00 PM EST
   workflow_dispatch:
 
 jobs:
@@ -24,7 +26,6 @@ jobs:
           pip install groq==0.11.0
           pip install -r requirements.txt
           pip install httpx==0.27.0 --force-reinstall
-          pip show groq httpx
 
       - name: Run pipeline
         env:
